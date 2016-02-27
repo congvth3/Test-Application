@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/top"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="90dp"
+        android:paddingLeft="140dp"
+        android:paddingTop="140dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nearby"
+        android:layout_alignTop="@+id/top"
+        android:layout_alignBottom="@+id/top"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:paddingRight="140dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/plan"
+        android:layout_alignLeft="@+id/top"
+        android:layout_marginTop="270dp"
+        android:paddingBottom="140dp"
+        android:paddingLeft="140dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/partner"
+        android:layout_alignTop="@id/plan"
+        android:layout_alignBottom="@+id/plan"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:paddingRight="140dp"/>
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1" />
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0" />
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>
+
